@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.user.batterylevel.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Service"
+        android:onClick="onBatteryServiceStarted"
+        android:id="@+id/btn_startBatteryService"
+        android:layout_below="@+id/tv_batteryPercentageDrop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Service"
+        android:onClick="onBatteryServiceStopped"
+        android:id="@+id/btn_stopBatteryService"
+        android:layout_marginBottom="144dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/btn_startBatteryService"
+        android:layout_alignEnd="@+id/btn_startBatteryService"
+        android:layout_alignLeft="@+id/btn_startBatteryService"
+        android:layout_alignStart="@+id/btn_startBatteryService" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/tv_batteryPercentageDrop"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        android:visibility="invisible"/>
+</RelativeLayout>
